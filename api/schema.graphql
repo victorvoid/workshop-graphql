@@ -1,0 +1,15 @@
+type Query {
+  users(id: ID): [User]
+}
+
+type User {
+  name: String,
+  age: Int,
+  id: ID,
+  companies: [Company]
+}
+
+type Company {
+  name: String,
+  bossId: ID
+}
